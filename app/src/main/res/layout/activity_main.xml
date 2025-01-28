@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Botão para resetar os números -->
+
+    <!-- Texto para os números chamados -->
+
+    <!-- GridLayout para os números -->
+
+    <!-- Botão para gerar os números -->
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Resetar"
+        app:layout_constraintBottom_toTopOf="@+id/button_generate"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout_numbers"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout_numbers" />
+
+    <TextView
+        android:id="@+id/textView_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="Números chamados aparecerão aqui"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_reset"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout_numbers"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout_numbers" />
+
+    <GridLayout
+        android:id="@+id/gridLayout_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:columnCount="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Gerar Números"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout_numbers"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout_numbers"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout_numbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
