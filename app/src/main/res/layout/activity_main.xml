@@ -17,7 +17,7 @@
 
     <Button
         android:id="@+id/button_reset"
-        android:layout_width="97dp"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Resetar"
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
-        android:columnCount="10"
+        android:columnCount="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
